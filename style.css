@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+html{
+    box-sizing: border-box;
+    background-color: black;
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow:
+      -1px -1px 0 black,
+       1px -1px 0 black,
+      -1px  1px 0 black,
+       1px  1px 0 black;
+}
+
+
+.background{
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+}
+
+
+.background img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 50%;
+    min-height: 50%;
+    filter: blur(15px);
+    -webkit-filter: blur(50px);
+    transform: scale(1.1);
+}
+
+
+.container{
+    /*background-color: #fff;*/
+    position: relative;
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease;
+    margin-top: 10%;
+    color: white;
+    text-shadow:
+      -1px -1px 0 black,
+       1px -1px 0 black,
+      -1px  1px 0 black,
+       1px  1px 0 black;
+}
+
+
+.container:hover{
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+}
+
+
+.player-img{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: -50px;
+    left: 50px;
+}
+
+
+.player-img img{
+    object-fit: cover;
+    border-radius: 20px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.player-img:hover img{
+    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.8);
+}
+
+
+.player-img img.active{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+
+h2{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0 0;
+}
+
+
+h3{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0 0;
+}
+
+
+h4{
+    font-size: 17px;
+    text-align: center;
+    font-weight: 400;
+    margin: 10px 0 0;
+}
+
+h5{
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+.player-progress{
+    box-shadow: 0 0px 100px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    cursor: pointer; /* changes cursor to pointer when hovered*/
+    margin: 40px 20px 35px;
+    height: 6px;
+    width: 90%;
+}
+
+
+.progress{
+    background-color: #000;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.02s linear;
+}
+
+
+.music-duration{
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.player-controls{
+    position: relative;
+    top: -15px;
+    left: 126px;    /*for centering the controls icons*/
+    width: 200px;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.fa-solid{
+    font-size: 30px;
+    color: #000;
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+
+.fa-solid:hover{
+    filter: brightness(10%);
+    transform: scale(110%);
+}
+
+
+.player-button{
+    font-size: 44px;
+    position: relative;
+    top: 3px;
+}
+
+
+.playlist-container{
+    /*background-color: #fff; */
+    position: relative;
+    height: 40px;
+    width: 400px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 35px 35px rgba(0, 0, 0, 0.342);
+    transition: all 0.25s ease;
+    z-index: 0; /* Lower z-index to place it behind container*/
+    cursor: pointer;
+    
+}
+
+.playlist{
+    /*background-color: #fff; */
+    /*height: 20px; */
+    width: 150px;
+    margin: 0 auto;  /* This centers horizontally */
+    transition: opacity 0.5s ease; /* Add transition for opacity */
+    opacity: 0; /* Initially hidden */
+    display: none;
+}
+
+.playlist h3{
+    font-size: 19px;
+    font-weight: 750;
+}
+
+.playlist h4:hover{
+    transform: scale(110%);
+}
+
+.playlist img{
+    display: block;
+    height: auto;
+    width: 75%; 
+    margin: 0 0 0 12%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;  
+}
+
+.playlist-container.active .playlist {
+    opacity: 1; /* Fade in after transition delay */
+    transition-delay: 0.35s; /* Delay the appearance by given seconds */
+}
+
+
+#album-title, #songs, #pullup {
+    display: none;
+}
+
+
+.playlist-container:hover{
+    transform: translateY(10px);
+}
+
+
+.playlist-container.active{
+    transform: translateY(20px);
+    box-shadow: 0 -25px 25px rgba(0, 0, 0, 0.151);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.playlist-container.active:hover{
+    transform: translateY(0px);
+}
+
+.playlist-container.active #playlist, .playlist-container.active #album-title, .playlist-container.active #songs, .playlist-container.active #pullup {
+    display: block;
+}
+
+
+.playlist-container.active #dropdown{
+    display: none;
+}
+
+
+.pullup{
+    position: relative;
+    top: 10px;
+    left: 186px;    /*for centering the controls icons*/
+    width: 200px;
+    opacity: 75%;
+}
+
+.dropdown{
+    position: relative;
+    top: 10px;
+    left: 186px;    /*for centering the controls icons*/
+    width: 200px;
+    opacity: 75%;
+}
+
+.track-info{
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 600px;
+    opacity: 75%;
+    box-shadow: 0 -25px 25px rgba(0, 0, 0, 0.151);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.track-info:hover{
+    transition: all 0.2s;
+    transform: translateX(10px);
+}
+
+
+.track-info.active{
+    justify-content: center; 
+    align-items: flex-start;
+    width: 500px;
+
+}
+
+.track-content {
+    justify-content: center;
+    align-items: flex-start;
+    white-space: pre-line;
+    color: white;
+    opacity: 0;
+    max-width: 0;
+    text-overflow: normal;
+    font-size: 24px;
+}
+
+.track-info.active .track-content {
+    justify-content: center;
+    align-items: flex-start;
+    opacity: 1;
+    max-width: 400px;
+}
+
+.songs.active {
+    color: rgb(221, 206, 67);
+    font-weight: bold;
+}
+
+#link{
+    color: #4550e6;
+    text-decoration: underline;
+    text-decoration-color: #4550e6;
+}
+
+#loop {
+    margin-left: 50px;  /* Move the repeat icon further out */
+    transition: color 0.3s;
+}
+
+#loop.active {
+    color: limegreen;
+}
