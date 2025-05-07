@@ -17,30 +17,30 @@ const music = new Audio();
 const songs = [
     //Launchpoint
     {
-        path: 'assets/reminisce.mp3',
+        path: 'Assets/reminisce.mp3',
         displayName: 'Reminisce',
-        cover: 'assets/launchpoint_cover.png',
+        cover: 'Assets/launchpoint_cover.png',
         artist: 'Salslinger',
         content: 'The Launchpoint Album contains some of earliest works. When I was first getting into music I struggled a lot, but these tracks are the best I\'ve made within the first I maded music. <br><br> With Reminisce I wanted to go for a sad song that had some hope'
     },
     {
-        path: 'assets/dungeon_waltz.mp3',
+        path: 'Assets/dungeon_waltz.mp3',
         displayName: 'Dungeon Waltz',
-        cover: 'assets/launchpoint_cover.png',
+        cover: 'Assets/launchpoint_cover.png',
         artist: 'Salslinger',
         content: 'Test 22'
     },
     {
-        path: 'assets/frolicking.mp3',
+        path: 'Assets/frolicking.mp3',
         displayName: 'Frolicking',
-        cover: 'assets/launchpoint_cover.png',
+        cover: 'Assets/launchpoint_cover.png',
         artist: 'Salslinger',
         content: 'Test 22'
     },
     {
-        path: 'assets/wander.mp3',
+        path: 'Assets/wander.mp3',
         displayName: 'Wander',
-        cover: 'assets/launchpoint_cover.png',
+        cover: 'Assets/launchpoint_cover.png',
         artist: 'Salslinger',
         content: 'Test 22'
 
@@ -48,73 +48,73 @@ const songs = [
     //Launchpoint
     //Nihilo
     {
-        path: 'assets/iggys_journey.mp3',
+        path: 'Assets/iggys_journey.mp3',
         displayName: 'Iggy\'s Journey',
-        cover: 'assets/psm_cover.png',
+        cover: 'Assets/psm_cover.png',
         artist: 'Salslinger',
         content: 'Test 22'
 
     },
     {
-        path: 'assets/thorns_malice.mp3',
+        path: 'Assets/thorns_malice.mp3',
         displayName: 'Thorn\'s Malice',
-        cover: 'assets/psm_cover.png',
+        cover: 'Assets/psm_cover.png',
         artist: 'Salslinger',
         content: 'Test 22'
 
     },
     {
-        path: 'assets/maeves_past.mp3',
+        path: 'Assets/maeves_past.mp3',
         displayName: 'Maeve\'s Past',
-        cover: 'assets/psm_cover.png',
+        cover: 'Assets/psm_cover.png',
         artist: 'Salslinger',
         content: 'Test 22'
 
     },
     {
-        path: 'assets/challenge_start.mp3',
+        path: 'Assets/challenge_start.mp3',
         displayName: 'Challenge Start',
-        cover: 'assets/ref_cover.png',
+        cover: 'Assets/ref_cover.png',
         artist: 'Salslinger (ft. ThatBooRadley)',
         content: 'Test 22'
 
     },
     {
-        path: 'assets/millennial_brawl.mp3',
+        path: 'Assets/millennial_brawl.mp3',
         displayName: 'Millennial Brawl',
-        cover: 'assets/ref_cover.png',
+        cover: 'Assets/ref_cover.png',
         artist: 'Salslinger (ft. ThatBooRadley)',
         content: 'Test 22'
 
     },
     {
-        path: 'assets/deadend.mp3',
+        path: 'Assets/deadend.mp3',
         displayName: 'Deadend',
-        cover: 'assets/cherubim_cover.png',
+        cover: 'Assets/cherubim_cover.png',
         artist: 'Salslinger',
         content: 'Test 22'
 
     },
     {
-        path: 'assets/boss_prelude.mp3',
+        path: 'Assets/boss_prelude.mp3',
         displayName: 'Boss Prelude',
-        cover: 'assets/cherubim_cover.png',
+        cover: 'Assets/cherubim_cover.png',
         artist: 'Salslinger (ft. ThatBooRadley)',
         content: 'Test 22'
 
     },
     {
-        path: 'assets/dormant.mp3',
+        path: 'Assets/dormant.mp3',
         displayName: 'Dormant',
-        cover: 'assets/lunacy_cover.png',
+        cover: 'Assets/lunacy_cover.png',
         artist: 'Salslinger (ft. ThatBooRadley)',
         content: 'Test 22'
 
     },
     {
-        path: 'assets/approach.mp3',
+        path: 'Assets/approach.mp3',
         displayName: 'Approach',
-        cover: 'assets/lunacy_cover.png',
+        cover: 'Assets/lunacy_cover.png',
         artist: 'Salslinger (ft. ThatBooRadley)',
         content: 'Test 22'
 
@@ -122,25 +122,25 @@ const songs = [
     //Nihilo
     //Snatched
     {
-        path: 'assets/respite.mp3',
+        path: 'Assets/respite.mp3',
         displayName: 'Respite',
-        cover: 'assets/snatched_cover.png',
+        cover: 'Assets/snatched_cover.png',
         artist: 'Salslinger',
         content: 'Test 22'
 
     },
     {
-        path: 'assets/uneasy.mp3',
+        path: 'Assets/uneasy.mp3',
         displayName: 'Uneasy',
-        cover: 'assets/snatched_cover.png',
+        cover: 'Assets/snatched_cover.png',
         artist: 'Salslinger',
         content: 'Test 22'
 
     },
     {
-        path: 'assets/desolate.mp3',
+        path: 'Assets/desolate.mp3',
         displayName: 'Desolate',
-        cover: 'assets/snatched_cover.png',
+        cover: 'Assets/snatched_cover.png',
         artist: 'Salslinger',
         content: 'Test 22'
 
