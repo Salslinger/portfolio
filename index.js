@@ -189,7 +189,9 @@ function loadMusic(song){
 }
 
 function changeMusic(direction){
-    musicIndex = (musicIndex + direction + songs.length) % songs.length;
+    musicIndex = (musicIndex + direction) % songs.length;
+    if (musicIndex < 0) musicIndex = songs.length - 1;
+    console.log(musicIndex);
     loadMusic(songs[musicIndex]);
     playMusic();
 }
@@ -259,9 +261,10 @@ const playlistContainer = document.querySelector('.playlist-container');
 document.querySelectorAll('#songs').forEach(songElement => {
     songElement.addEventListener('click', () => {
         // Get the index of the clicked song
-        const songIndex = songElement.getAttribute('data-song-index');
+        const songIndex = parseInt(songElement.getAttribute('data-song-index'), 10);
         musicIndex = songIndex;
-        const selectedSong = songs[songIndex];
+        console.log(musicIndex);
+        const selectedSong = songs[musicIndex];
 
         // Load and play the selected song
         loadMusic(selectedSong);
