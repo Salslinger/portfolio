@@ -9,7 +9,7 @@ export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
 
      return ( 
-        <nav className="sticky top-0 flex justify-between items-center bg-slate-800">
+        <nav className="sticky top-0 flex justify-between items-center bg-[#1A1717]">
             <Link to="/" className="text-white text-xl font-bold m-4 no-underline">
             <House />
             </Link>
