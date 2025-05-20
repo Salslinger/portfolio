@@ -3,9 +3,12 @@ import SplineScene from '../SplineScene';
 import "../Home.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faUnity } from '@fortawesome/free-brands-svg-icons';
-import godotImage from '../../../public/godot.svg';
-import unrealImage from '../../../public/unreal.svg';
-
+import godotImage from '../../assets/godot.svg'
+import unrealImage from '../../assets/unreal.svg'
+import robloxImage from '../../assets/roblox studio.svg'
+import flStudioImage from '../../assets/fl studio.svg'
+import fmodImage from '../../assets/fmod.svg';
+import reaperImage from '../../assets/reaper.svg';
 
 export const Home = () => {
   return (
@@ -45,19 +48,35 @@ export const Home = () => {
               <h1 className='text-5xl mt-5 mb-5'>
                 Software
               </h1>
-              <div className='flex flex-col md:grid-cols-2 lg:flex-row items-center justify-center space-x-6 space-y-4 lg:space-y-0'>
+              <div className='grid grid-cols-2 items-center justify-center space-y-5'>
                 <div className='flex flex-col items-center'>
-                  <FontAwesomeIcon icon={faUnity} size='5x'/>
+                  <FontAwesomeIcon icon={faUnity} size='6x'/>
                   <span className='text-xl text-white'>Unity</span>
                 </div>
                 <div className='flex flex-col items-center'>
-                  <img src={godotImage} className='w-24 h-24' alt="Godot Logo" />
+                  <img src={godotImage} className='w-24 h-24'/>
                   <span className='text-xl text-white'>Godot</span>
                 </div>
                 <div className='flex flex-col items-center'>
-                  <img src={unrealImage} className='w-22 h-22' alt="Unreal Logo" />
+                  <img src={unrealImage} className='w-24 h-24'/>
                   <span className='text-xl text-white'>Unreal Engine</span>
                 </div>
+                <div className='flex flex-col items-center'>
+                  <img src={robloxImage} className='w-20 h-20'/>
+                  <span className='text-xl text-white'>Roblox Studio</span>
+                </div>
+                <div className='flex flex-col items-center'>
+                  <img src={flStudioImage} className='w-30 h-30'/>
+                  <span className='text-xl text-white'>FL Studio</span>
+                </div>
+                <div className='flex flex-col items-center'>
+                  <img src={fmodImage} className='w-32 h-32'/>
+                  <span className='text-xl text-white'>FMOD</span>
+                </div>
+                <div className='flex flex-col items-center'>
+                  <img src={reaperImage} className='w-32 h-32 fill-white'/>
+                  <span className='text-xl text-white'>Reaper</span>
+                </div>       
               </div>
             </div>
             <div className='bg-[#9C9457] m-25 rounded-4xl opacity-90'>
@@ -71,9 +90,14 @@ export const Home = () => {
               </h1>
             </div>
           </div>
-
-
         </div>
+
+        <div className='light-to-dark text-white flex flex-col h-[50vh]'>
+          <h1 className='text-7xl text-center mt-5 mb-5'>
+            Experience
+          </h1>
+        </div>
+
       </div>
     </div>
 
