@@ -9,6 +9,8 @@ import robloxImage from '../../assets/roblox studio.svg'
 import flStudioImage from '../../assets/fl studio.svg'
 import fmodImage from '../../assets/fmod.svg';
 import reaperImage from '../../assets/reaper.svg';
+import wwiseImage from '../../assets/wwise.svg';
+
 
 export const Home = () => {
   return (
@@ -76,7 +78,11 @@ export const Home = () => {
                 <div className='flex flex-col items-center'>
                   <img src={reaperImage} className='w-32 h-32 fill-white'/>
                   <span className='text-xl text-white'>Reaper</span>
-                </div>       
+                </div> 
+                <div className='flex flex-col items-center'>
+                  <img src={wwiseImage} className='w-32 h-32 fill-white'/>
+                  <span className='text-xl text-white'>Wwise</span>
+                </div>      
               </div>
             </div>
             <div className='bg-[#9C9457] m-25 rounded-4xl opacity-90'>
