@@ -32,17 +32,43 @@ import vmwareImage from '../../assets/vmware.svg';
 import eclipseImage from '../../assets/eclipse.svg'
 import scumbag from '../../assets/s7mIhC.png'
 import myPortfolio from '../../assets/dsaw.png';
+import { useLocation, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export const Home = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const sectionId = location.state?.scrollTo;
+
+    if (sectionId) {
+      // Wait a tick for DOM to render
+      setTimeout(() => {
+        const el = document.getElementById(sectionId);
+        if (el) {
+          const offset = 40; // Adjust for sticky navbar
+          const y = el.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top: y, behavior: "smooth" });
+        }
+
+        // Clean up state so it doesn’t scroll again on refresh
+        navigate(".", { replace: true, state: null });
+      }, 0); // or use requestAnimationFrame
+    }
+  }, [location, navigate]);
+
   return (
     <div
+      id='home'
       className="min-h-screen"
     >
       <div className='dark-to-light grid md:grid-cols-1 lg:grid-cols-2 h-screen'>
         <div className='flex flex-col text-center items-center justify-center text-white mx-2'>
-          <h1 className='text-7xl mb-6'>
+          <h1 className='text-7xl mb-4'>
             Kenny Nguyen
           </h1>
+          <a href="mailto:knguyen5574@gmail.com" className='mb-2 text-3xl underline'>knguyen5574@gmail.com</a>
           <p className='text-3xl'>
             Software Engineer | Game Developer | Music Composer
           </p>
@@ -70,7 +96,7 @@ export const Home = () => {
 
         </p>
       </div>
-      <div className='dark-to-light text-white flex flex-col '>
+      <div id='skills' className='dark-to-light text-white flex flex-col '>
         <h1 className='text-7xl text-center mt-5 mb-5'>
           Skills
         </h1>
@@ -224,7 +250,7 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className='light-to-dark text-white flex flex-col'>
+        <div id='experience' className='light-to-dark text-white flex flex-col'>
           <h1 className='text-7xl text-center mt-25 mb-5'>
             Experience
           </h1>
@@ -285,7 +311,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <div className='dark-to-light text-white flex flex-col'>
+        <div id='projects' className='dark-to-light text-white flex flex-col'>
           <h1 className='text-7xl text-center mt-10 mb-5'>
             Projects
           </h1>
@@ -354,17 +380,6 @@ export const Home = () => {
               </div>
             </div>
 
-          </div>
-        </div>
-        <div className='light-to-dark text-white flex flex-col'>
-          <h1 className='text-7xl text-center mt-25 mb-5'>
-            Contact
-          </h1>
-          <div className='bg-[#9C9457] rounded-4xl opacity-90 shadow-2xl m-5 lg:my-12 lg:mx-150 h-[72vh] flex justify-center'>
-            <div className='text-5xl'>
-              Name
-              <input type="text" placeholder=" Enter your name" />
-            </div>
           </div>
         </div>
 
