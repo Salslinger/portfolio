@@ -30,7 +30,8 @@ import azureImage from '../../assets/azure_devops.svg';
 import visualStudioImage from '../../assets/visual studio.svg';
 import vmwareImage from '../../assets/vmware.svg';
 import eclipseImage from '../../assets/eclipse.svg'
-
+import scumbag from '../../assets/s7mIhC.png'
+import myPortfolio from '../../assets/dsaw.png';
 
 export const Home = () => {
   return (
@@ -38,7 +39,7 @@ export const Home = () => {
       className="min-h-screen"
     >
       <div className='dark-to-light grid md:grid-cols-1 lg:grid-cols-2 h-screen'>
-        <div className='flex flex-col text-center items-center justify-center text-white'>
+        <div className='flex flex-col text-center items-center justify-center text-white mx-2'>
           <h1 className='text-7xl mb-6'>
             Kenny Nguyen
           </h1>
@@ -53,7 +54,7 @@ export const Home = () => {
         <h1 className='text-7xl text-center mt-5 mb-5'>
           About Me
         </h1>
-        <p className='pl-20 pr-20 mb-10'>
+        <p className='pl-20 pr-20 -mx-10 lg:mx-30 mb-10'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere explicabo eaque rem fugiat? Temporibus, cum, quae, delectus alias dolores expedita quas ad accusamus minus debitis vitae sunt totam culpa velit.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere explicabo eaque rem fugiat? Temporibus, cum, quae, delectus alias dolores expedita quas ad accusamus minus debitis vitae sunt totam culpa velit.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere explicabo eaque rem fugiat? Temporibus, cum, quae, delectus alias dolores expedita quas ad accusamus minus debitis vitae sunt totam culpa velit.
@@ -227,7 +228,7 @@ export const Home = () => {
           <h1 className='text-7xl text-center mt-25 mb-5'>
             Experience
           </h1>
-          <div className='bg-[#9C9457] m-25 rounded-4xl opacity-90 shadow-2xl'>
+          <div className='bg-[#9C9457] m-5 lg:mx-125 rounded-4xl opacity-90 shadow-2xl'>
             <div className='text-3xl m-5'>
               Founder and President
             </div>
@@ -238,10 +239,10 @@ export const Home = () => {
               September 2023 - April 2025
             </div>
             <div className='text-2xl m-5'>
-              o Led the 
+              o Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad reprehenderit error commodi totam reiciendis illum pariatur a adipisci excepturi non, possimus, sint vero ex illo, at nihil iste aspernatur expedita. 
             </div>
           </div>
-          <div className='bg-[#9C9457] m-25 rounded-4xl opacity-90 shadow-2xl'>
+          <div className='bg-[#9C9457] m-5 lg:mx-125 rounded-4xl opacity-90 shadow-2xl'>
             <div className='text-3xl m-5'>
               Product Developer and Funded Researcher
             </div>
@@ -255,7 +256,7 @@ export const Home = () => {
               o Led the 
             </div>
           </div>
-          <div className='bg-[#9C9457] m-25 rounded-4xl opacity-90 shadow-2xl'>
+          <div className='bg-[#9C9457] m-5 lg:mx-125 rounded-4xl opacity-90 shadow-2xl'>
             <div className='text-3xl m-5'>
               Systems Developer and Music Composer
             </div>
@@ -269,7 +270,7 @@ export const Home = () => {
               o Led the 
             </div>
           </div>
-          <div className='bg-[#9C9457] m-25 rounded-4xl opacity-90 shadow-2xl'>
+          <div className='bg-[#9C9457] m-5 lg:mx-125 rounded-4xl opacity-90 shadow-2xl'>
             <div className='text-3xl m-5'>
               Student Assistant
             </div>
@@ -285,14 +286,86 @@ export const Home = () => {
           </div>
         </div>
         <div className='dark-to-light text-white flex flex-col'>
-          <h1 className='text-7xl text-center mt-25 mb-5'>
+          <h1 className='text-7xl text-center mt-10 mb-5'>
             Projects
           </h1>
+          <div className='grid md:grid-cols-1 lg:grid-cols-3 lg:mx-52'>
+            <div className='bg-[#9C9457] rounded-4xl opacity-90 shadow-2xl m-5 lg:my-12'>
+              <img src={scumbag} className='w-full h-auto rounded-4xl'/>
+              <div className='text-3xl ml-4 my-1'>
+                Scumbag Streamer
+              </div>
+              <div className='text-base mx-4 mb-3'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
+              </div>
+              <div className='flex flex-wrap justify-center'>
+                <div className='text-lg mx-4 mb-3 justify-center flex bg-[#1a1717] rounded-4xl py-0.5 items-center'>
+                  <img src={godotImage} className='w-6 h-6 m-1 ml-2'/>
+                  <span className='text-base text-white mr-3'>Godot</span>
+                </div>
+                <div className='text-lg mx-4 mb-3 justify-center flex bg-[#1a1717] rounded-4xl py-0.5 items-center'>
+                  <FontAwesomeIcon icon={faGithub} size='1x' className='m-1 ml-2'/>
+                  <span className='text-base text-white mr-3'>Git</span>
+                </div>    
+              </div>
+            </div>
+            <div className='bg-[#9C9457] rounded-4xl opacity-90 shadow-2xl m-5 lg:my-12'>
+              <img src={myPortfolio} className='w-full h-auto rounded-4xl'/>
+              <div className='text-3xl ml-4 my-1'>
+                My Portfolio
+              </div>
+              <div className='text-base mx-4 mb-3'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
+              </div>
+              <div className='flex flex-wrap justify-center'>
+                <div className='text-lg mx-4 mb-3 justify-center flex bg-[#1a1717] rounded-4xl py-0.5 items-center'>
+                  <img src={godotImage} className='w-6 h-6 m-1 ml-2'/>
+                  <span className='text-base text-white mr-3'>React</span>
+                </div>
+                <div className='text-lg mx-4 mb-3 justify-center flex bg-[#1a1717] rounded-4xl py-0.5 items-center'>
+                  <img src={htmlImage} className='w-6 h-6 m-1 ml-2'/>
+                  <span className='text-base text-white mr-3'>HTML</span>
+                </div>
+                <div className='text-lg mx-4 mb-3 justify-center flex bg-[#1a1717] rounded-4xl py-0.5 items-center'>
+                  <img src={cssImage} className='w-6 h-6 m-1 ml-2'/>
+                  <span className='text-base text-white mr-3'>CSS</span>
+                </div>
+                <div className='text-lg mx-4 mb-3 justify-center flex bg-[#1a1717] rounded-4xl py-0.5 items-center'>
+                  <img src={tailwindImage} className='w-6 h-6 m-1 ml-2'/>
+                  <span className='text-base text-white mr-3'>Tailwind CSS</span>
+                </div>
+                <div className='text-lg mx-4 mb-3 justify-center flex bg-[#1a1717] rounded-4xl py-0.5 items-center'>
+                  <img src={javascriptImage} className='w-6 h-6 m-1 ml-2'/>
+                  <span className='text-base text-white mr-3'>JavaScript</span>
+                </div> 
+                <div className='text-lg mx-4 mb-3 justify-center flex bg-[#1a1717] rounded-4xl py-0.5 items-center'>
+                  <FontAwesomeIcon icon={faGithub} size='1x' className='m-1 ml-2'/>
+                  <span className='text-base text-white mr-3'>Git</span>
+                </div>
+              </div>
+            </div>
+            <div className='bg-[#9C9457] rounded-4xl opacity-90 shadow-2xl m-5 lg:my-12'>
+              <img src={scumbag} className='w-full h-auto rounded-4xl'/>
+              <div className='text-3xl ml-4 my-1'>
+                Scumbag Streamer
+              </div>
+              <div className='text-base mx-4 mb-3'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
+              </div>
+            </div>
+
+          </div>
         </div>
         <div className='light-to-dark text-white flex flex-col'>
           <h1 className='text-7xl text-center mt-25 mb-5'>
             Contact
           </h1>
+          <div className='bg-[#9C9457] rounded-4xl opacity-90 shadow-2xl m-5 lg:my-12 lg:mx-150 h-[72vh] flex justify-center'>
+            <div className='text-5xl'>
+              Name
+              <input type="text" placeholder=" Enter your name" />
+            </div>
+          </div>
         </div>
 
       </div>
