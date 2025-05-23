@@ -46,7 +46,7 @@ export const Projects = () => {
                 May 2025 - Present
               </div>
               <div className='text-base mx-4 mb-3'>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
+                You are looking at it right now! Hope you're enjoying what you see!
               </div>
               <div className='flex flex-wrap justify-center'>
                 <div className='text-lg mx-4 mb-3 justify-center flex bg-[#1a1717] rounded-4xl py-0.5 items-center'>
@@ -77,7 +77,7 @@ export const Projects = () => {
             </div>
             <div
               className="bg-[#9C9457] rounded-4xl opacity-90 shadow-2xl m-5 lg:my-12 duration-500 hover:shadow-yellow-500 hover:cursor-pointer"
-              onClick={() => window.open('https://salslinger.itch.io/streamer', '_blank', 'noopener,noreferrer')}
+              onClick={() => window.open('https://websites.uta.edu/cseseniordesign/2025/05/02/maventure-vr/', '_blank', 'noopener,noreferrer')}
             >
               <img src={myPortfolio} className='w-full h-auto rounded-4xl'/>
               <div className='text-3xl ml-4 my-1'>
@@ -134,7 +134,7 @@ export const Projects = () => {
                 Snatched
               </div>
               <div className='text-lg ml-4 my-1'>
-                February 2025 - March 2025
+                November 2024 - December 2024
               </div>
               <div className='text-base mx-4 mb-3'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
@@ -159,7 +159,7 @@ export const Projects = () => {
                 Well Done
               </div>
               <div className='text-lg ml-4 my-1'>
-                February 2025 - March 2025
+                November 2024
               </div>
               <div className='text-base mx-4 mb-3'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
@@ -184,7 +184,7 @@ export const Projects = () => {
                 Network Distance Vector Routing
               </div>
               <div className='text-lg ml-4 my-1'>
-                February 2025 - March 2025
+                October 2024 - November 2024
               </div>
               <div className='text-base mx-4 mb-3'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
@@ -209,7 +209,7 @@ export const Projects = () => {
                 I'm being jumped by Squares
               </div>
               <div className='text-lg ml-4 my-1'>
-                February 2025 - March 2025
+                October 2024
               </div>
               <div className='text-base mx-4 mb-3'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
@@ -234,7 +234,7 @@ export const Projects = () => {
                 Maestra - Music Sightreading
               </div>
               <div className='text-lg ml-4 my-1'>
-                February 2025 - March 2025
+                September 2024
               </div>
               <div className='text-base mx-4 mb-3'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
@@ -259,7 +259,7 @@ export const Projects = () => {
                 Lunacy
               </div>
               <div className='text-lg ml-4 my-1'>
-                February 2025 - March 2025
+                August 2024
               </div>
               <div className='text-base mx-4 mb-3'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
@@ -284,7 +284,7 @@ export const Projects = () => {
                 Student Advising Appointment System
               </div>
               <div className='text-lg ml-4 my-1'>
-                February 2025 - March 2025
+                February 2024 - May 2024
               </div>
               <div className='text-base mx-4 mb-3'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
@@ -309,7 +309,7 @@ export const Projects = () => {
                 MOBI 3D
               </div>
               <div className='text-lg ml-4 my-1'>
-                February 2025 - March 2025
+                September 2023 - December 2023
               </div>
               <div className='text-base mx-4 mb-3'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
@@ -334,7 +334,32 @@ export const Projects = () => {
                 Egos 2000 Operating System
               </div>
               <div className='text-lg ml-4 my-1'>
-                February 2025 - March 2025
+                September 2023 - November 2023
+              </div>
+              <div className='text-base mx-4 mb-3'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
+              </div>
+              <div className='flex flex-wrap justify-center'>
+                <div className='text-lg mx-4 mb-3 justify-center flex bg-[#1a1717] rounded-4xl py-0.5 items-center'>
+                  <img src={godotImage} className='w-6 h-6 m-1 ml-2'/>
+                  <span className='text-base text-white mr-3'>Godot</span>
+                </div>
+                <div className='text-lg mx-4 mb-3 justify-center flex bg-[#1a1717] rounded-4xl py-0.5 items-center'>
+                  <FontAwesomeIcon icon={faGithub} size='1x' className='m-1 ml-2'/>
+                  <span className='text-base text-white mr-3'>Git</span>
+                </div>    
+              </div>
+            </div>
+            <div
+              className="bg-[#9C9457] rounded-4xl opacity-90 shadow-2xl m-5 lg:my-12 duration-500 hover:shadow-yellow-500 hover:cursor-pointer"
+              onClick={() => window.open('https://salslinger.itch.io/streamer', '_blank', 'noopener,noreferrer')}
+            >
+              <img src={myPortfolio} className='w-full h-auto rounded-4xl'/>
+              <div className='text-3xl ml-4 my-1'>
+                Library Database
+              </div>
+              <div className='text-lg ml-4 my-1'>
+                September 2023 - November 2023
               </div>
               <div className='text-base mx-4 mb-3'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
@@ -359,7 +384,7 @@ export const Projects = () => {
                 Statefarm Interactive Hazard Game
               </div>
               <div className='text-lg ml-4 my-1'>
-                February 2025 - March 2025
+                October 2023
               </div>
               <div className='text-base mx-4 mb-3'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
@@ -384,7 +409,7 @@ export const Projects = () => {
                 Referees of Eternal Free for All
               </div>
               <div className='text-lg ml-4 my-1'>
-                February 2025 - March 2025
+                July 2023
               </div>
               <div className='text-base mx-4 mb-3'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
@@ -409,7 +434,7 @@ export const Projects = () => {
                 Past the Sleeping Mice
               </div>
               <div className='text-lg ml-4 my-1'>
-                February 2025 - March 2025
+                May 2023 - June 2023
               </div>
               <div className='text-base mx-4 mb-3'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
@@ -434,7 +459,7 @@ export const Projects = () => {
                 Rhythmix
               </div>
               <div className='text-lg ml-4 my-1'>
-                February 2025 - March 2025
+                February 2023 - March 2023
               </div>
               <div className='text-base mx-4 mb-3'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
@@ -459,7 +484,7 @@ export const Projects = () => {
                 Travel Cost Estimator
               </div>
               <div className='text-lg ml-4 my-1'>
-                February 2025 - March 2025
+                March 2022 - May 2022
               </div>
               <div className='text-base mx-4 mb-3'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
@@ -484,20 +509,10 @@ export const Projects = () => {
                 Casino Slots - Code.Org
               </div>
               <div className='text-lg ml-4 my-1'>
-                February 2025 - March 2025
+                March 2020 - May 2020
               </div>
               <div className='text-base mx-4 mb-3'>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil non, odio error corrupti, quos totam facilis temporibus natus sequi eaque porro nemo sit doloremque, tempora cupiditate ea. Sit, assumenda voluptates.
-              </div>
-              <div className='flex flex-wrap justify-center'>
-                <div className='text-lg mx-4 mb-3 justify-center flex bg-[#1a1717] rounded-4xl py-0.5 items-center'>
-                  <img src={godotImage} className='w-6 h-6 m-1 ml-2'/>
-                  <span className='text-base text-white mr-3'>Godot</span>
-                </div>
-                <div className='text-lg mx-4 mb-3 justify-center flex bg-[#1a1717] rounded-4xl py-0.5 items-center'>
-                  <FontAwesomeIcon icon={faGithub} size='1x' className='m-1 ml-2'/>
-                  <span className='text-base text-white mr-3'>Git</span>
-                </div>    
               </div>
             </div>
           </div>
