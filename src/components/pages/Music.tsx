@@ -2,8 +2,11 @@ import "../Home.css"
 import scumbag from '../../assets/s7mIhC.png'
 import bg from '../../assets/istockphoto-628434980-612x612.jpg';
 import { ArrowBigDown, FastForward, Play, Repeat, Rewind } from "lucide-react";
+import { useState } from "react";
 
 export const Music = () => {
+  const [playing, setPlaying] = useState(false);
+  
   return (
     <div className="dark-to-light min-h-screen flex flex-col justify-center items-center">
       <div className="bg-white rounded-2xl drop-shadow-2xl w-80 h-80 mb-100 z-10 absolute overflow-hidden duration-500 hover:shadow-2xl">
@@ -18,20 +21,20 @@ export const Music = () => {
             min="0"
             max="100"
             value="50"
-            className="w-3/4 md:w-3/4 h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer"
+            className="w-3/4 md:w-3/4 h-2 accent-green-300 bg-gray-300 rounded-lg appearance-none cursor-pointer"
           />
         </div>
           <div className="flex justify-between items-center px-4">
           {/* Left: Centered controls */}
           <div className="flex justify-center flex-1 ml-12">
-            <Rewind className="w-12 h-12 text-white fill-current hover:text-green-300" />
-            <Play className="w-12 h-12 text-white fill-current mx-4 hover:text-green-300" />
-            <FastForward className="w-12 h-12 text-white fill-current hover:text-green-300" />
+            <Rewind className="w-12 h-12 text-white fill-current hover:text-green-300 cursor-pointer" />
+            <Play className="w-12 h-12 text-white fill-current mx-4 hover:text-green-300 cursor-pointer" />
+            <FastForward className="w-12 h-12 text-white fill-current hover:text-green-300 cursor-pointer" />
           </div>
 
           {/* Right: Repeat icon */}
           <div className="w-12 flex justify-end">
-            <Repeat className="w-12 h-12 text-white fill-current hover:text-green-300" />
+            <Repeat className="w-12 h-12 text-white fill-current hover:text-green-300 cursor-pointer" />
           </div>
         </div>
       </div>
