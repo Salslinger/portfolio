@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUnity } from '@fortawesome/free-brands-svg-icons';
 import cppImage from '../../assets/cpp.svg';
 import cSharpImage from '../../assets/csharp.svg';
 import SkillCard from '../SkillCard';

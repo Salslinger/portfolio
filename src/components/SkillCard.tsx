@@ -16,7 +16,7 @@ export default function SkillCard({
     
     if (isMini) {
         return (
-            <div className='text-lg mx-4 mb-3 justify-center flex bg-[#1a1717] rounded-4xl py-2 items-center'>
+            <div className='text-lg mx-4 mb-3 justify-center flex bg-[#1a1717] rounded-4xl px-1 py-2 items-center'>
                 <img src={getImageUrl(name, "svg")} className="mx-1" style={{width, height}} />
                 <span className='text-base text-white mr-2'>{name}</span>
             </div>
