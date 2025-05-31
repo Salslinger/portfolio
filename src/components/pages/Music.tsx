@@ -1,11 +1,11 @@
 import "../Home.css"
-import scumbag from '../../assets/s7mIhC.png'
+//import scumbag from '../../assets/s7mIhC.png'
 import bg from '../../assets/istockphoto-628434980-612x612.jpg';
 import { ArrowBigDown, FastForward, Play, Repeat, Rewind } from "lucide-react";
-import { useState } from "react";
+//import { useState } from "react";
 
 export const Music = () => {
-  const [playing, setPlaying] = useState(false);
+  //const [playing, setPlaying] = useState(false);
   
   return (
     <div className="dark-to-light min-h-screen flex flex-col justify-center items-center">
