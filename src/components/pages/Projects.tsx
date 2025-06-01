@@ -10,7 +10,7 @@ export const Projects = () => {
             <ProjectCard
             title='Out of the Box'
             date='May 2025'
-            description='Submission for the GameDev.Tv 2025 Game Jam.'
+            description='Submission for the GameDev.Tv 2025 Game Jam (Tiny World).'
             link='https://salslinger.itch.io/out-of-the-box'
             skills={['Godot', 'GitHub', 'FL Studio']}
             >
@@ -24,9 +24,9 @@ export const Projects = () => {
             >
             </ProjectCard>
             <ProjectCard
-            title='Mavenuture VR'
+            title='Maventure VR'
             date='September 2024 - May 2025'
-            description='You are looking at it right now! Hope you enjoy!'
+            description='Virtual reality multiplayer game used as a campus recruiting tool. This was my senior design project that was sponsored by the College of Engineering Assistant Dean.'
             link='https://websites.uta.edu/cseseniordesign/2025/05/02/maventure-vr/'
             skills={['Unity', 'Blender', 'GitHub']}
             >
@@ -34,7 +34,7 @@ export const Projects = () => {
             <ProjectCard
             title='Scumbag Streamer'
             date='February 2025 - March 2025'
-            description='You are looking at it right now! Hope you enjoy!'
+            description='Submission for the VGDO Spring 2025 Game Jam (All Eyes on Me).'
             link='https://salslinger.itch.io/streamer'
             skills={['Godot', 'GitHub']}
             >
@@ -42,7 +42,7 @@ export const Projects = () => {
             <ProjectCard
             title='Snatched'
             date='November 2024 - December 2024'
-            description='You are looking at it right now! Hope you enjoy!'
+            description='CSE 4304 Game Design Final Project.'
             link='https://salslinger.itch.io/streamer'
             skills={['Unity', 'FL Studio', 'GitHub']}
             >
@@ -50,7 +50,7 @@ export const Projects = () => {
             <ProjectCard
             title='Well Done'
             date='November 2024'
-            description='You are looking at it right now! Hope you enjoy!'
+            description='Submission for the VGDO Fall 2024 Game Jam (Burnout).'
             link='https://salslinger.itch.io/streamer'
             skills={['Godot', 'GitHub']}
             >
@@ -58,7 +58,7 @@ export const Projects = () => {
             <ProjectCard
             title='Network Distance Vector Table'
             date='October 2024 - November 2024'
-            description='You are looking at it right now! Hope you enjoy!'
+            description='CSE 43'
             link='https://salslinger.itch.io/streamer'
             skills={['Python']}
             >
@@ -163,7 +163,7 @@ export const Projects = () => {
             title='Casino Slots - Code.org'
             date='March 2020 - May 2020'
             description='This is one of my first ever coding projects made for AP Computer Science Principles, and is what initially got me interested in Computer Science.'
-            link='https://salslinger.itch.io/out-of-the-box'
+            link='https://studio.code.org/projects/applab/R9ZWClgl1dwMkeXDGjxAUSgdR_vc-L41ifmnVxj-afo'
             skills={[]}
             >
             </ProjectCard>
