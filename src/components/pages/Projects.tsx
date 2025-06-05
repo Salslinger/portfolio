@@ -10,7 +10,7 @@ export const Projects = () => {
             <ProjectCard
             title='Out of the Box'
             date='May 2025'
-            description='Submission for the GameDev.Tv 2025 Game Jam (Tiny World).'
+            description='Submission for the GameDev.Tv 2025 Game Jam (Theme: Tiny World). Top 3% in Music and 4% in Story categories out of 1023 entries.'
             link='https://salslinger.itch.io/out-of-the-box'
             skills={['Godot', 'GitHub', 'FL Studio']}
             >
@@ -34,7 +34,7 @@ export const Projects = () => {
             <ProjectCard
             title='Scumbag Streamer'
             date='February 2025 - March 2025'
-            description='Submission for the VGDO Spring 2025 Game Jam (All Eyes on Me).'
+            description='Submission for the VGDO Spring 2025 Game Jam (Theme: All Eyes on Me). First place in Narrative and Visuals categories and 2nd place overall.'
             link='https://salslinger.itch.io/streamer'
             skills={['Godot', 'GitHub']}
             >
@@ -42,7 +42,7 @@ export const Projects = () => {
             <ProjectCard
             title='Snatched'
             date='November 2024 - December 2024'
-            description='CSE 4304 Game Design Final Project.'
+            description='CSE 4304 Game Design Final Project. Horror story game. Top 3 out of 7 games.'
             link='https://salslinger.itch.io/streamer'
             skills={['Unity', 'FL Studio', 'GitHub']}
             >
@@ -50,7 +50,7 @@ export const Projects = () => {
             <ProjectCard
             title='Well Done'
             date='November 2024'
-            description='Submission for the VGDO Fall 2024 Game Jam (Burnout).'
+            description='Submission for the VGDO Fall 2024 Game Jam (Theme: Burnout). First place in Audio and Narrative categories and 2nd place overall.'
             link='https://salslinger.itch.io/streamer'
             skills={['Godot', 'GitHub']}
             >
@@ -58,7 +58,7 @@ export const Projects = () => {
             <ProjectCard
             title='Network Distance Vector Table'
             date='October 2024 - November 2024'
-            description='CSE 43'
+            description='CSE 4344 Computer Network Organization Project. Table GUI to display distances between network routers.'
             link='https://salslinger.itch.io/streamer'
             skills={['Python']}
             >
@@ -66,7 +66,7 @@ export const Projects = () => {
             <ProjectCard
             title="I'm being jumped by Squares"
             date='October 2024'
-            description='You are looking at it right now! Hope you enjoy!'
+            description='CSE 4304 Game Design Intermediate Project. Wave-based shooter game.'
             link='https://salslinger.itch.io/streamer'
             skills={['Unity', 'GitHub']}
             >
@@ -74,7 +74,7 @@ export const Projects = () => {
             <ProjectCard
             title="Maestra - Music Sightreading"
             date='September 2024'
-            description='You are looking at it right now! Hope you enjoy!'
+            description='CSE 4304 Educational Game. Learn how to sight read sheet music in a fun game!'
             link='https://salslinger.itch.io/streamer'
             skills={['Unity', 'GitHub']}
             >
@@ -148,7 +148,7 @@ export const Projects = () => {
             date='February 2023 - July 2023'
             description='You are looking at it right now! Hope you enjoy!'
             link='https://salslinger.itch.io/out-of-the-box'
-            skills={['FL Studio', 'Godot', 'GitHub']}
+            skills={['Unity', 'GitHub']}
             >
             </ProjectCard>
             <ProjectCard
