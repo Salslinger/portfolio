@@ -1,9 +1,0 @@
-.dark-to-light {
-    background: #1a1717;
-    background: linear-gradient(180deg, rgba(26, 23, 23, 1) 47%, rgba(99, 91, 61, 1) 79%, rgba(156, 148, 87, 1) 100%);
-}
-
-.light-to-dark {
-    background: #9C9457;
-    background: linear-gradient(180deg, rgba(156, 148, 87, 1) 14%, rgba(99, 91, 61, 1) 63%, rgba(26, 23, 23, 1) 100%);
-}
