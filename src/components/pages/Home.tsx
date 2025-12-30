@@ -1,9 +1,8 @@
+import SplineScene from "../SplineScene";
+import "../Home.css";
+
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import { About } from "./About";
-import { Skills } from "./Skills";
-import { Experiences } from "./Experiences";
-import { Projects } from "./Projects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faItchIo, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -31,8 +30,12 @@ export const Home = () => {
   }, [location, navigate]);
 
   return (
-    <div id="home" className="min-h-screen">
-      <div className="dark-to-light grid md:grid-cols-1 lg:grid-cols-2 h-screen">
+    <div id="home">
+      <div className="absolute inset-0 -z-20 dark-to-light h-255 lg:h-252" />
+
+      {<SplineScene />}
+
+      <div className="flex justify-center h-screen relative">
         <div className="flex flex-col text-center items-center justify-center text-white mx-2">
           <h1 className="text-7xl mb-4 font-bold">Kenny Nguyen</h1>
           <a
@@ -67,16 +70,9 @@ export const Home = () => {
               ></FontAwesomeIcon>
             </a>
           </div>
-          <p className="text-3xl">
-            Software Engineer | Game Developer | Music Composer
-          </p>
+          <p className="text-3xl">Software Engineer | Game Developer</p>
         </div>
       </div>
-      <About></About>
-      <Skills></Skills>
-      <Experiences></Experiences>
-
-      <Projects></Projects>
     </div>
   );
 };

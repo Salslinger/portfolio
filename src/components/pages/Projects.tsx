@@ -3,7 +3,7 @@ import ProjectCard from "../ProjectCard";
 export const Projects = () => {
   return (
     <div id="projects" className="dark-to-light text-white flex flex-col">
-      <h1 className="text-7xl text-center mt-10 mb-5">Projects</h1>
+      <h1 className="text-7xl font-bold text-center mt-10 mb-5">Projects</h1>
       <div className="grid md:grid-cols-1 lg:grid-cols-3 lg:mx-52">
         <ProjectCard
           title="Out of the Box"
@@ -124,24 +124,20 @@ export const Projects = () => {
           link="https://salslinger.itch.io/out-of-the-box"
           skills={["Godot", "GitHub"]}
         ></ProjectCard>
-        {/* 
-            <ProjectCard
-            title='Referees of Eternal Free for All'
-            date='July 2023'
-            description='You are looking at it right now! Hope you enjoy!'
-            link='https://salslinger.itch.io/out-of-the-box'
-            skills={['FL Studio', 'Godot', 'GitHub']}
-            >
-            </ProjectCard>
-            <ProjectCard
-            title='Past the Sleeping Mice'
-            date='May 2023 - June 2023'
-            description='You are looking at it right now! Hope you enjoy!'
-            link='https://salslinger.itch.io/out-of-the-box'
-            skills={['FL Studio', 'Godot', 'GitHub']}
-            >            
-            </ProjectCard>
-            */}
+        <ProjectCard
+          title="Referees of Eternal Free for All"
+          date="July 2023"
+          description="You are looking at it right now! Hope you enjoy!"
+          link="https://salslinger.itch.io/out-of-the-box"
+          skills={["FL Studio", "Godot", "GitHub"]}
+        ></ProjectCard>
+        <ProjectCard
+          title="Past the Sleeping Mice"
+          date="May 2023 - June 2023"
+          description="You are looking at it right now! Hope you enjoy!"
+          link="https://salslinger.itch.io/out-of-the-box"
+          skills={["FL Studio", "Godot", "GitHub"]}
+        ></ProjectCard>
         <ProjectCard
           title="Rhythmix"
           date="February 2023 - July 2023"
@@ -149,7 +145,6 @@ export const Projects = () => {
           link="https://salslinger.itch.io/out-of-the-box"
           skills={["Unity", "GitHub"]}
         ></ProjectCard>
-        {/* 
         <ProjectCard
           title="Travel Cost Estimator"
           date="March 2022 - May 2022"
@@ -164,7 +159,6 @@ export const Projects = () => {
           link="https://studio.code.org/projects/applab/R9ZWClgl1dwMkeXDGjxAUSgdR_vc-L41ifmnVxj-afo"
           skills={[]}
         ></ProjectCard>
-        */}
       </div>
     </div>
   );
