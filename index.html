@@ -1,94 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Assets/changes-Cents.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Salslinger Music Player</title>
-</head>
-<body>
-
-    <div class="background">
-        <img src="Assets/launchpoint_cover.png" id="bg-img">
-    </div>
-    <div class="wrapper">
-        <div class="container">
-            <div class="player-img">
-                <img src="Assets/launchpoint_cover.png" class="active" id="cover">
-            </div>
-
-            <h2 id="music-title">reminisce</h2>
-            <h3 id="music-artist">Salslinger</h3>
-
-            <div class="player-progress" id="player-progress">
-                <div class="progress" id="progress"></div>
-                <div class="music-duration">
-                    <span id="current-time">0:00</span>
-                    <span id="duration">0:00</span>
-                </div>
-            </div>
-
-            <div class="player-controls">
-                <i class="fa-solid fa-backward" title="Previous" id="prev" style="color: white;"></i>
-                <i class="fa-solid fa-play play-button" title="Play" id="play" style="color: white;"></i>
-                <i class="fa-solid fa-forward" title="Next" id="next" style="color: white;"></i>
-                <i class="fa-solid fa-repeat" title="Loop" id = "loop" style="color: white; font-size:24px; vertical-align: middle;"></i>
-            </div>
-
-        </div>
-
-        <div class="playlist-container">
-            <div class="pullup" id="pullup">
-                <i class="fa-solid fa-angle-up"></i>
-            </div>
-
-            <div class="playlist" id="playlist">
-                <br><br>
-                <div class="album">
-                    <h3 id="album-title">Launchpoint</h2>
-                        <h4 id="songs" data-song-index="0">Reminisce</h4>
-                        <h4 id="songs" data-song-index="1">Dungeon Waltz</h4>
-                        <h4 id="songs" data-song-index="2">Frolicking</h4>
-                        <h4 id="songs" data-song-index="3">Wander</h4>
-                </div>
-                <br><br>
-                <div class="album">
-                    <h3 id="album-title">Nihilo</h2>
-                        <h4 id="songs" data-song-index="4">Iggy's Journey</h4>
-                        <h4 id="songs" data-song-index="5">Thorn's Malice</h4>
-                        <h4 id="songs" data-song-index="6">Maeve's Past</h4>
-                        <h4 id="songs" data-song-index="7">Challenge Start</h4>
-                        <h4 id="songs" data-song-index="8">Millennial Brawl</h4>
-                        <h4 id="songs" data-song-index="9">Deadend</h4>
-                        <h4 id="songs" data-song-index="10">Boss Prelude</h4>
-                        <h4 id="songs" data-song-index="11">Dormant</h4>
-                        <h4 id="songs" data-song-index="12">Approach</h4>
-                </div>
-                <br><br>
-                <div class="album">
-                    <h3 id="album-title">Snatched</h2>
-                        <h4 id="songs" data-song-index="13">Respite</h4>
-                        <h4 id="songs" data-song-index="14">Uneasy</h4>
-                        <h4 id="songs" data-song-index="15">Desolate</h4>
-                </div>
-                <br><br><br><br>
-            </div>
-            <div class="dropdown" id="dropdown">
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
-        </div>
-    </div>
-    <div class="track-info">
-        <i class="fa-solid fa-angle-right"></i>
-        <div class="track-content" id="track-content">
-            <body>
-                The Launchpoint Album consists of my very first compositions.
-            </body>
-        </div>
-    </div>
-    
-    <script src="index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dakaizo's Portfolio</title>
+    <style>
+      /* Remove default browser margins */
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Prevents unwanted scrollbars */
+      }
+      /* Ensure the iframe fills the viewport */
+      iframe {
+        width: 100vw;
+        height: 100vh;
+        border: none;
+        display: block; /* Removes extra bottom spacing */
+      }
+    </style>
+  </head>
+  <body>
+    <iframe src="Game/index.html"></iframe>
+  </body>
 </html>
