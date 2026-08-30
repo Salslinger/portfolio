@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f05644;
+  --color-secondary: #791b17;
+  --color-tertiary: #fedcbe;
+  --color-background: #161f28;
+  --color-text: #ffffff;
+
+  --animate-wave: wave 8s linear infinite;
+
+  @keyframes wave {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.text-outline-red {
+  -webkit-text-stroke: 2px var(--color-secondary);
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+html,
+#root {
+  scroll-behavior: smooth;
+  height: 100%;
+  background-image: url("/website/crumples.png");
+}
