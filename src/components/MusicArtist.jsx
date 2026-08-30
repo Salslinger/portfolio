@@ -1,17 +1,20 @@
 import FadeIn from "./FadeIn.jsx";
 
-const MusicArtist = ({ title, creator, soundcloud_links }) => {
+const MusicArtist = ({ title, creator, soundcloud_links, onClick }) => {
   return (
     <FadeIn>
-      <div className="text-center py-5">
-        <p className="text-tertiary text-center text-lg">
+      <div
+        className="py-5 hover:cursor-pointer h-100 w-100 liquid-glass"
+        onClick={onClick}
+      >
+        <p className="text-tertiary text-center text-lg font-bold">
           {title}
-          <br></br>
+          <br />
           {creator}
         </p>
 
         {soundcloud_links.map((link, index) => (
-          <div key={index} className="w-full max-w-2xl mx-auto">
+          <div key={index} className="w-7/8 max-w-2xl mx-auto">
             <iframe
               width="100%"
               height="300"

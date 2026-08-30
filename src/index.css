@@ -9,15 +9,10 @@
   --color-text: #ffffff;
 
   --animate-wave: wave 8s linear infinite;
+}
 
-  @keyframes wave {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
+@utility liquid-glass {
+  @apply bg-white/10 border border-white/20 shadow-lg rounded-3xl hover:backdrop-blur-3xl;
 }
 
 .text-outline-red {

@@ -1,18 +1,23 @@
 import FadeIn from "./FadeIn.jsx";
 
-const ArtPiece = ({ title, creator, img_src }) => {
+const ArtPiece = ({ title, creator, img_src, onClick }) => {
   return (
     <FadeIn>
-      <div className="h-72  text-center py-5">
+      <div
+        className="hover:cursor-pointer h-108 liquid-glass"
+        onClick={onClick}
+      >
         <p className="text-primary text-center text-lg">
           {title}
-          <br></br>
+          <br />
           {creator}
         </p>
+
         <img
           src={img_src}
-          className="w-full h-full object-contain bg-black/20 rounded-3xl"
-        ></img>
+          alt={title}
+          className="object-contain w-full h-4/5"
+        />
       </div>
     </FadeIn>
   );

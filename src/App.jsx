@@ -3,6 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";
 import GallerySection from "./components/GallerySection";
+import ExperienceSection from "./components/ExperienceSection";
 import GameSection from "./components/GameSection";
 import HeroSection from "./components/HeroSection";
 import MusicSection from "./components/MusicSection";
@@ -13,6 +14,7 @@ function HomePage() {
     <>
       <HeroSection />
       <AboutSection />
+      <ExperienceSection />
       <GameSection />
       <MusicSection />
       <GallerySection />
